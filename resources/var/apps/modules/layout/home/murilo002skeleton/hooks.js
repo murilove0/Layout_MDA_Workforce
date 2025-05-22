@@ -4,7 +4,7 @@
  *
  * All the following functions are required in order for the Layout to work
  */
-App.service('layout_skeleton', function ($rootScope, HomepageLayout) {
+App.service('murilo002skeleton', function ($rootScope, HomepageLayout) {
 
     var service = {};
 
@@ -13,8 +13,8 @@ App.service('layout_skeleton', function ($rootScope, HomepageLayout) {
      *
      * @returns {string}
      */
-    service.getTemplate = function() {
-        return "modules/layout/home/layout_skeleton/view.html";
+    service.getTemplate = function () {
+        return "modules/layout/home/murilo002skeleton/view.html";
     };
 
     /**
@@ -22,14 +22,14 @@ App.service('layout_skeleton', function ($rootScope, HomepageLayout) {
      *
      * @returns {string}
      */
-    service.getModalTemplate = function() {
+    service.getModalTemplate = function () {
         return "templates/home/l10/modal.html";
     };
 
     /**
      * onResize is used for css/js callbacks when orientation change
      */
-    service.onResize = function() {
+    service.onResize = function () {
         /** Do nothing for this particular one */
     };
 
@@ -53,4 +53,9 @@ App.service('layout_skeleton', function ($rootScope, HomepageLayout) {
 
     return service;
 
+});
+App.controller('murilo002SkeletonCtrl', function($scope, $state, $rootScope, HomepageLayout) {
+  $scope.goTo = function(feature) {
+    HomepageLayout.goToFeature(feature);
+  };
 });

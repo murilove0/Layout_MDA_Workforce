@@ -1,0 +1,88 @@
+.layout.murilo002skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(126vh - var(--safe-area-inset-top));
+}
+
+ul.items-container-murilo002skeleton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  grid-auto-rows: 35px; /* altura de cada linha */
+  gap: 10px; /* espaço entre os itens */
+  list-style: none;
+  margin: 0 auto; /* centraliza horizontalmente */
+  width: 90%;
+  max-width: 400px; /* limite para não esticar muito */
+  padding: 0;
+}
+
+.murilo002skeleton-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid red;
+  color: white;
+  text-align: center;
+  height: 35px;
+  width: 100%;
+}
+
+ul.items-container-murilo002skeleton li:nth-child(7) {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+  height: 100px !important;
+  background: transparent !important;
+  border: none !important;
+  z-index: 10; /* acima do banner */
+  cursor: pointer;
+}
+
+/* Último item como banner */
+.murilo002skeleton-item:last-child {
+  margin-top: 17vh;
+  height: 100px !important;
+  width: 100vw !important;
+  border-radius: 0 !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  background-color: transparent !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+/* Ícones */
+.murilo002skeleton-icon {
+  display: none;
+}
+
+/* Ícone do banner */
+.murilo002skeleton-item:last-child .murilo002skeleton-icon {
+  display: none;
+}
+
+/* Nome */
+.murilo002skeleton-name {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.bannerContainermurilo002skeleton {
+  grid-column: 1 / -1; /* ocupa as duas colunas */
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100px !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+
+.bannerImagemurilo002skeleton {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+}

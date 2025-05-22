@@ -1,9 +1,9 @@
 <?php
 # Layout 1007
 $datas = array(
-    'name' => 'Layout Skeleton',
+    'name' => 'murilo002skeleton2025',
     'visibility' => Application_Model_Layout_Homepage::VISIBILITY_HOMEPAGE,
-    'code' => 'layout_skeleton',
+    'code' => 'murilo002skeleton',
     'preview' => '/customization/layout/homepage/layout_skeleton.png',
     'use_more_button' => 1,
     'use_horizontal_scroll' => 0,
@@ -19,4 +19,4 @@ $layout
     ->setData($datas)
     ->insertOrUpdate(array("code"));
 
-Siberian_Assets::copyAssets("/app/local/modules/LayoutSkeleton/resources/var/apps/");
+Siberian_Assets::copyAssets("/app/local/modules/murilo002skeleton2025/resources/var/apps/");
