@@ -1,0 +1,63 @@
+.layout.murilo003skeleton {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: calc(130vh - var(--safe-area-inset-top)) !important;
+}
+
+ul.items-container-murilo003skeleton {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 10px;
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 380px;
+  padding: 0;
+}
+
+/* Estilo base dos itens */
+.murilo003skeleton-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid red;
+  color: white;
+  text-align: center;
+  height: 35px;
+}
+
+/* Primeiro item ocupa toda a largura */
+.murilo003skeleton-item:nth-child(1) {
+  grid-column: 1 / -1 !important;
+  height: 170px !important;
+  width: 200px !important;
+}
+
+/* Segundo, terceiro e quarto seguem fluxo normal (coluna 1 a 3) */
+.murilo003skeleton-item:nth-child(2),
+.murilo003skeleton-item:nth-child(3),
+.murilo003skeleton-item:nth-child(4) {
+    height: 171px !important;
+}
+/* não precisa mexer neles diretamente */
+
+/* Quinto item também ocupa toda a largura */
+.murilo003skeleton-item:nth-child(5) {
+  grid-column: 1 / -1 !important; /* ocupa as 3 colunas */
+  height: 60px !important;
+  margin-top: 20px !important;
+}
+.murilo003skeleton-item:nth-child(6) {
+  display: none !important;
+}
+
+.murilo003skeleton-name {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.murilo003skeleton-icon {
+  height: 30px;
+}

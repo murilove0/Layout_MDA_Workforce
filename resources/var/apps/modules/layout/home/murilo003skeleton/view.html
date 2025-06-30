@@ -1,0 +1,13 @@
+<div class="layout murilo003skeleton" ng-controller="murilo003SkeletonCtrl">
+  <ul class="items-container-murilo003skeleton" ng-class="features.layoutOptions.alignment">
+    <li class="murilo003skeleton-item"
+        ng-repeat="feature in features.overview.options"
+        tabbar-items
+        option="feature"
+        go-to-url="goTo(feature);">
+
+      <!-- Nome da feature -->
+      <h2 class="murilo003skeleton-name">{{ feature.name }}</h2>
+    </li>
+  </ul>
+</div>
