@@ -2,7 +2,7 @@
   "name": "murilo003skeleton",
   "description": "Custom murilo003 skeleton",
   "type": "layout",
-  "version": "1.2.06",
+  "version": "1.2.07",
   "dependencies": {
     "system": {
       "type": "SAE",
